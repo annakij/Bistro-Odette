@@ -1,0 +1,162 @@
+/* COLOR SCHEMES
+RED: #5e292a
+YELLOW: #f28b2d
+BLUE: #9fc9c6 */
+
+body,
+html {
+  color: #5e292a;
+  overflow-x: hidden;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+p,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h3 {
+  letter-spacing: 2px;
+  font-family: "Cormorant Garamond", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#header-logo {
+  background-color: #9fc9c6;
+  height: 100vh;
+}
+
+#header-menu {
+  background-image: url("../images/kelsey-knight-udj2tD3WKsY-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+#header-menu .btn {
+  text-transform: uppercase;
+  border: 3px solid #5e292a;
+  border-radius: 0;
+  background-color: transparent;
+  color: #472021;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 0.5em 2em;
+  transition: all 0.3s ease;
+}
+
+#header-menu .btn:hover {
+  background-color: rgba(94, 41, 42, 0.9);
+  border: 3px solid #472021;
+  color: #e9e5e2fb;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: 2px solid #5e292a;
+  border-radius: 0;
+  background-color: transparent;
+  color: #5e292a;
+  letter-spacing: 3px;
+  padding: 0.5em 2em;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: rgba(94, 41, 42, 0.7);
+  border: 2px solid #5e292a;
+  color: #fff;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  bottom: 30px;
+  right: 30px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  z-index: 1000;
+  background-color: rgba(94, 41, 42, 0.9);
+  color: #ededed;
+}
+.back-to-top:hover {
+  background-color: rgba(57, 26, 26, 0.9);
+}
+.back-to-top .show {
+  display: flex;
+}
+
+#bookings {
+  background-color: #f28b2d;
+}
+
+.logo {
+  max-width: 70vh;
+}
+
+.icon {
+  height: 25px;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+.footer,
+footer {
+  background-color: #9fc9c6;
+}
+
+.footer li a,
+.footer li,
+.footer p {
+  list-style: none;
+  text-decoration: none;
+  color: #5e292a;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer img {
+  height: 45px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 100vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  iframe {
+    height: 50vh;
+  }
+  .back-to-top {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+  p,
+  li,
+  li a,
+  .btn {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
