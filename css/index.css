@@ -42,11 +42,11 @@ h3 {
 
 #header-menu .btn {
   text-transform: uppercase;
+  font-weight: bold;
   border: 2px solid #5e292a;
   border-radius: 0;
   background-color: transparent;
   color: #472021;
-  font-weight: bold;
   letter-spacing: 3px;
   padding: 0.5em 2em;
   transition: all 0.3s ease;
@@ -56,6 +56,15 @@ h3 {
   background-color: rgba(94, 41, 42, 0.9);
   border: 2px solid #472021;
   color: #e9e5e2fb;
+}
+
+#bookTableButton {
+  background-color: rgba(242, 139, 45, 0.8) !important;
+  color: #472021 !important;
+}
+#bookTableButton:hover {
+  background-color: rgba(94, 41, 42, 0.9) !important;
+  color: #fff !important;
 }
 
 #openinghours {
@@ -71,7 +80,7 @@ h3 {
 }
 
 .row img {
-  max-height: 40vh;
+  max-height: 55vh;
 }
 
 .btn {
@@ -104,7 +113,7 @@ h3 {
   font-size: 2rem;
   text-decoration: none;
   z-index: 1000;
-  background-color: rgba(94, 41, 42, 0.9);
+  background-color: rgba(94, 41, 42, 0.8);
   color: #ededed;
   transition: 0.3s ease-in-out;
 }
@@ -149,13 +158,71 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
+.footer li a:hover {
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
 .footer img {
   height: 45px;
+}
+
+/* CAREERS SPECIFIK CSS */
+
+#Careers {
+  background-color: #9fc9c6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#textCareers {
+  font-size: clamp(2.5rem, 6vw, 8rem);
+  font-family: "Cormorant Garamond", sans-serif;
+  text-align: center;
+}
+
+#logoCareers {
+  max-height: 70vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+#careers-positions {
+  background-color: #9fc9c6;
+  align-items: center;
+  justify-content: center;
+}
+
+.positions-box {
+  background-color: #fff;
+  border: 3px solid #5e292a;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.positions-box h2 {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 @media (max-width: 768px) {
   .logo {
     max-width: 100vh;
+  }
+  #Careers {
+    flex-direction: column;
+  }
+
+  #logoCareers {
+    max-height: 50vh;
+  }
+
+  #textCareers {
+    font-size: clamp(2rem, 8vw, 4rem);
   }
 }
 
