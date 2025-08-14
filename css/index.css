@@ -217,6 +217,20 @@ footer {
     background-attachment: scroll;
     background-position: center center;
   }
+  #header-menu .btn {
+    text-transform: uppercase;
+    border: 2px solid #5e292a;
+    border-radius: 0;
+    background-color: rgba(94, 41, 42, 0.9);
+    color: #e9e5e2fb;
+    letter-spacing: 3px;
+    padding: 0.5em 2em;
+    transition: all 0.3s ease;
+  }
+  #header-menu .btn:hover {
+    background-color: rgb(71, 31, 32);
+    border: 2px solid #472021;
+  }
   .row img {
     max-width: 100vw;
     padding: 1rem;
